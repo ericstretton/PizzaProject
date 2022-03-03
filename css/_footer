@@ -1,0 +1,11 @@
+footer{
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 50px;
+    justify-content: center;
+    bottom: 0vh;
+    left: 0vw;
+    background-color: aqua;
+    width: 100vw;
+}

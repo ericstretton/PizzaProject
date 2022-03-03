@@ -1,0 +1,10 @@
+
+header{
+    display:grid;
+    background-color: aqua;
+    width: 100vw;
+    position: fixed;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: stretch;
+}

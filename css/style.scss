@@ -2,3 +2,28 @@
     margin:0;
     padding: 0;
 }
+
+body{
+    height: 250vh;
+}
+
+@import '_header';
+@import '_footer';
+
+section{
+    display: grid;
+    grid-template-rows: 1/2fr 1/3fr;
+    row-gap: 50px;
+    iframe{
+    width:100vw;
+    
+}
+}
+@media  screen and(min-width:600px){
+    
+}
+
+
+@media screen and(min-width:1000px){
+
+}

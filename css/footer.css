@@ -1,0 +1,17 @@
+footer {
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0vh;
+  left: 0vw;
+  background-color: aqua;
+  width: 100vw;
+}
+/*# sourceMappingURL=footer.css.map */

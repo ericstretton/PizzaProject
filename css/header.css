@@ -1,0 +1,13 @@
+header {
+  display: -ms-grid;
+  display: grid;
+  background-color: aqua;
+  width: 100vw;
+  position: fixed;
+  -ms-grid-columns: (minmax 50px, 250px 1fr 2fr)[autofit];
+      grid-template-columns: repeat(autofit, minmax 50px, 250px 1fr 2fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=header.css.map */
