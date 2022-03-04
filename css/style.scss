@@ -2,28 +2,34 @@
     margin:0;
     padding: 0;
 }
-
-body{
-    height: 250vh;
+#GridContainer{
+    display: grid;
 }
-
 @import '_header';
 @import '_footer';
 
+
 section{
+    position: relative;
     display: grid;
-    grid-template-rows: 1/2fr 1/3fr;
+    grid-template-rows: 1/2fr 1fr 1fr;
     row-gap: 50px;
-    iframe{
-    width:100vw;
+        iframe{
+            width:100vw;
+        };
+        p{
+            border: solid black;
+            border-radius: 30px;
+            padding: 10px;};
+}
+
+
+
+// @media  screen and(min-width:600px){
     
-}
-}
-@media  screen and(min-width:600px){
-    
-}
+// }
 
 
-@media screen and(min-width:1000px){
+// @media screen and(min-width:1000px){
 
-}
+// }

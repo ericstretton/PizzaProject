@@ -2,10 +2,18 @@ footer{
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    column-gap: 50px;
+    column-gap: 5px;
     justify-content: center;
     bottom: 0vh;
     left: 0vw;
     background-color: aqua;
     width: 100vw;
 }
+div img{display: block;}
+
+/* @media  screen and(min-width:600px){
+    
+}
+
+
+@media screen and(min-width:1000px){} */

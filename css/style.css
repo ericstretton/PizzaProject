@@ -3,34 +3,102 @@
   padding: 0;
 }
 
-body {
-  height: 250vh;
+#GridContainer {
+  display: -ms-grid;
+  display: grid;
 }
 
 header {
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 3fr 1fr;
+      grid-template-columns: 1fr 3fr 1fr;
   background-color: aqua;
+  min-height: 10vh;
   width: 100vw;
-  position: fixed;
-  -ms-grid-columns: 1fr 1fr 2fr 1fr;
-      grid-template-columns: 1fr 1fr 2fr 1fr;
+  /* width: 100vw;
+    position: fixed;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "img . h1 a";
+    justify-content: "start start center end";
+    z-index: 10; */
+}
+
+#menu {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+}
+
+#dropdown {
+  display: none;
+  position: absolute;
+  background-color: blueviolet;
+  border: solid black;
+  border-radius: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  width: 15vw;
+  z-index: 11;
 }
 
+#menu:focus {
+  pointer-events: none;
+}
+
+#menu:focus #dropdown {
+  display: block;
+  pointer-events: all;
+}
+
+li {
+  display: inline-block;
+}
+
+li a {
+  display: block;
+}
+
+div img, h1 {
+  display: inline-block;
+}
+
+img {
+  width: 45px;
+}
+
+/* @media  screen and(min-width:600px){
+    
+    .WebSiteHeader{
+        display: grid;
+        grid-template-columns: auto;}
+
+    #MobileNavButton{z-index: -10;
+        opacity: 0;
+    }
+    #HeaderLogo{
+         position: absolute;    
+    }
+   
+   
+
+}
+
+
+@media screen and(min-width:1000px){
+
+} */
 footer {
   position: fixed;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -40,15 +108,32 @@ footer {
   width: 100vw;
 }
 
+div img {
+  display: block;
+}
+
+/* @media  screen and(min-width:600px){
+    
+}
+
+
+@media screen and(min-width:1000px){} */
 section {
+  position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1/2fr 1/3fr;
-      grid-template-rows: 1/2fr 1/3fr;
+  -ms-grid-rows: 1/2fr 1fr 1fr;
+      grid-template-rows: 1/2fr 1fr 1fr;
   row-gap: 50px;
 }
 
 section iframe {
   width: 100vw;
+}
+
+section p {
+  border: solid black;
+  border-radius: 30px;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
