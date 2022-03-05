@@ -1,5 +1,5 @@
 @import '_variables';
-@import 'header.scss';
+@import '_header';
 @import '_footer';
 *{
     margin:0;
@@ -14,15 +14,13 @@
 #info{
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 2fr;
-    grid-row-gap: 10px;
+    grid-template-rows: 0.25fr 0.75fr 0.25fr 1.5fr 2fr;
+    justify-content: center;
     top: 10vh;
     #title{position: relative;
         height: 5vh;
-        h3{position: absolute;
-            display: inline-block;
-            left: 35%;
-            justify-content: center;
+        justify-content: center;
+        h3{
             font-family: $title_font;
         }
     }
@@ -44,6 +42,23 @@
         //     background-color: $Background;};
             
 }
-.mapouter{position:relative;text-align:right;height:450px;width:390px;}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:450px;
+    width:390px;
+}
 
-.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:390px;}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:450px;
+    width:390px;
+    iframe{
+        width: 390px;
+         height: 450px;
+        margin: 0; 
+        scroll-behavior: none;
+        border: none;
+    }
+}

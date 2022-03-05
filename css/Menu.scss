@@ -1,5 +1,5 @@
 @import '_variables';
-@import 'header.scss';
+@import '_header';
 @import '_footer';
 *{
     margin:0;
@@ -14,7 +14,7 @@ Section{
     display: grid;
     position: relative;
     top: 10vh;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 0.5fr 1fr 1fr 1fr 1fr;
     #title{background-color: $background;
         border: solid black;
         border-radius: 20px;

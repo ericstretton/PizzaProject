@@ -137,24 +137,23 @@ div img {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 2fr;
-      grid-template-rows: 1fr 1fr 1fr 2fr;
-  grid-row-gap: 10px;
+  -ms-grid-rows: 0.25fr 0.75fr 0.25fr 1.5fr 2fr;
+      grid-template-rows: 0.25fr 0.75fr 0.25fr 1.5fr 2fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 10vh;
 }
 
 #info #title {
   position: relative;
   height: 5vh;
-}
-
-#info #title h3 {
-  position: absolute;
-  display: inline-block;
-  left: 35%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+#info #title h3 {
   font-family: "Courgette", cursive;
 }
 
@@ -184,5 +183,13 @@ div img {
   background: none !important;
   height: 450px;
   width: 390px;
+}
+
+.gmap_canvas iframe {
+  width: 390px;
+  height: 450px;
+  margin: 0;
+  scroll-behavior: none;
+  border: none;
 }
 /*# sourceMappingURL=contact.css.map */

@@ -135,8 +135,8 @@ Section {
   display: grid;
   position: relative;
   top: 10vh;
-  -ms-grid-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
 }
 
 Section #title {
