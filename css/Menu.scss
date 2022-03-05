@@ -8,12 +8,13 @@
 #grid_container{
     display: grid;
     background-color: $page_background;
+    z-index: 0;
 }
 
 Section{
     display: grid;
     position: relative;
-    top: 10vh;
+    top: 9vh;
     grid-template-rows:  1fr 0.5fr 1fr 1fr 1fr 1fr;
     #title{background-color: $background;
         border: solid black;
@@ -32,11 +33,35 @@ Section{
     display: grid;
     position: relative;
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
     justify-content: center;
     background-color: $alternate_background;
+    border: solid black;
+    border-radius: 20px;
+    padding: 10px;
+    button{
+        background-color: $alternate_background;
         border: solid black;
-        border-radius: 20px;
-        padding: 10px;
+        border-radius: 8px;
+    }
+    #dessert_category:hover{
+        font-size: 1.25em;
+    }
+    #pizza_category:hover{
+        font-size: 1.25em;
+    }
+    #pasta_category:hover{
+        font-size: 1.25em;
+    }
+
+    #pizza_category:focus-within{
+        .pasta_menu_items{
+            display: none;
+        }
+        .dessert_menu_items{
+            display: none;
+        }
+    }
 }
 
 .pizza_menu_items{

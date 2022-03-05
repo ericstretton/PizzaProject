@@ -128,13 +128,14 @@ div img {
   display: -ms-grid;
   display: grid;
   background-color: #97ce4c;
+  z-index: 0;
 }
 
 Section {
   display: -ms-grid;
   display: grid;
   position: relative;
-  top: 10vh;
+  top: 9vh;
   -ms-grid-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
 }
@@ -161,6 +162,8 @@ Section #title img {
   position: relative;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -168,6 +171,32 @@ Section #title img {
   border: solid black;
   border-radius: 20px;
   padding: 10px;
+}
+
+#menu_categories button {
+  background-color: #f0e14a;
+  border: solid black;
+  border-radius: 8px;
+}
+
+#menu_categories #dessert_category:hover {
+  font-size: 1.25em;
+}
+
+#menu_categories #pizza_category:hover {
+  font-size: 1.25em;
+}
+
+#menu_categories #pasta_category:hover {
+  font-size: 1.25em;
+}
+
+#menu_categories #pizza_category:focus-within .pasta_menu_items {
+  display: none;
+}
+
+#menu_categories #pizza_category:focus-within .dessert_menu_items {
+  display: none;
 }
 
 .pizza_menu_items {
