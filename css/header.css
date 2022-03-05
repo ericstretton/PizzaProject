@@ -1,13 +1,87 @@
 header {
   display: -ms-grid;
   display: grid;
-  background-color: aqua;
-  width: 100vw;
+  -ms-grid-columns: 1fr 3fr 2fr;
+      grid-template-columns: 1fr 3fr 2fr;
+  justify-items: center;
   position: fixed;
-  -ms-grid-columns: (minmax 50px, 250px 1fr 2fr)[autofit];
-      grid-template-columns: repeat(autofit, minmax 50px, 250px 1fr 2fr);
+  top: 0;
+  background-color: #f0e14a;
+  min-height: 8vh;
+  width: 100vw;
+  z-index: 1;
+  /* width: 100vw;
+    position: fixed;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-areas: "img . h1 a";
+    justify-content: "start start center end";
+    z-index: 10; */
+}
+
+header #title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr;
+      grid-template-columns: 1fr 4fr;
+}
+
+header #title h2 {
+  display: block;
+  font-family: "Courgette", cursive;
+}
+
+#menu {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: inline-block;
+}
+
+#dropdown {
+  display: none;
+  position: absolute;
+  background-color: blueviolet;
+  border: solid black;
+  border-radius: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 15vw;
 }
+
+#menu:focus-within {
+  pointer-events: none;
+}
+
+#menu:focus-within #dropdown {
+  display: block;
+  pointer-events: all;
+}
+
+img {
+  width: 35px;
+}
+
+/* @media  screen and(min-width:600px){
+    
+    .WebSiteHeader{
+        display: grid;
+        grid-template-columns: auto;}
+
+    #MobileNavButton{z-index: -10;
+        opacity: 0;
+    }
+    #HeaderLogo{
+         position: absolute;    
+    }
+   
+   
+
+}
+
+
+@media screen and(min-width:1000px){
+
+} */
 /*# sourceMappingURL=header.css.map */

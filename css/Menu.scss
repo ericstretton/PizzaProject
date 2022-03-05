@@ -1,0 +1,53 @@
+@import '_variables';
+@import 'header.scss';
+@import '_footer';
+*{
+    margin:0;
+    padding: 0;
+}
+#grid_container{
+    display: grid;
+    background-color: $page_background;
+}
+
+Section{
+    display: grid;
+    position: relative;
+    top: 10vh;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    #title{background-color: $background;
+        border: solid black;
+        border-radius: 20px;
+        padding: 10px;
+        h1{
+            position: absolute;
+            left: 30%;
+        }
+        img{
+            float: inline-end;
+        }}
+}
+
+#menu_categories{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    background-color: $alternate_background;
+        border: solid black;
+        border-radius: 20px;
+        padding: 10px;
+}
+
+.pizza_menu_items{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    #content_shell{background-color: $background;
+        border: solid black;
+        border-radius: 20px;
+        padding: 10px;
+        
+    }
+    
+}

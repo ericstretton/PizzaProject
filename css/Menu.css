@@ -127,32 +127,61 @@ div img {
 #grid_container {
   display: -ms-grid;
   display: grid;
-  height: 115vh;
-  -ms-grid-rows: 2fr 3fr 1fr;
-      grid-template-rows: 2fr 3fr 1fr;
   background-color: #97ce4c;
 }
 
-section {
-  top: 10vh;
-  position: relative;
+Section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1/2fr 1fr 1fr;
-      grid-template-rows: 1/2fr 1fr 1fr;
-  row-gap: 50px;
+  position: relative;
+  top: 10vh;
+  -ms-grid-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-section iframe {
-  width: 100vw;
-}
-
-section p {
-  border: solid black;
-  border-radius: 30px;
-  padding: 10px;
-  color: #f0e14a;
+Section #title {
   background-color: #e89ac7;
-  font-family: "Indie Flower", cursive;
+  border: solid black;
+  border-radius: 20px;
+  padding: 10px;
 }
-/*# sourceMappingURL=style.css.map */
+
+Section #title h1 {
+  position: absolute;
+  left: 30%;
+}
+
+Section #title img {
+  float: inline-end;
+}
+
+#menu_categories {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f0e14a;
+  border: solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.pizza_menu_items {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.pizza_menu_items #content_shell {
+  background-color: #e89ac7;
+  border: solid black;
+  border-radius: 20px;
+  padding: 10px;
+}
+/*# sourceMappingURL=Menu.css.map */

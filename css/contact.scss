@@ -1,0 +1,49 @@
+@import '_variables';
+@import 'header.scss';
+@import '_footer';
+*{
+    margin:0;
+    padding: 0;
+}
+#grid_container{
+    display: grid;
+    background-color: $page_background;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap:15vh;
+}
+#info{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-row-gap: 10px;
+    top: 10vh;
+    #title{position: relative;
+        height: 5vh;
+        h3{position: absolute;
+            display: inline-block;
+            left: 35%;
+            justify-content: center;
+            font-family: $title_font;
+        }
+    }
+    #content{display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        font-family: $content_font;
+        color: $font_color;
+        background-color: $background;
+        border: solid black;
+        border-radius: 20px;
+        padding: 10px;
+    }
+        // div{
+        //     border: solid black;
+        //     border-radius: 30px;
+        //     padding: 10px;
+        //     color: $font_color;
+        //     background-color: $Background;};
+            
+}
+.mapouter{position:relative;text-align:right;height:450px;width:390px;}
+
+.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:390px;}

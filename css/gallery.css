@@ -127,32 +127,6 @@ div img {
 #grid_container {
   display: -ms-grid;
   display: grid;
-  height: 115vh;
-  -ms-grid-rows: 2fr 3fr 1fr;
-      grid-template-rows: 2fr 3fr 1fr;
   background-color: #97ce4c;
 }
-
-section {
-  top: 10vh;
-  position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1/2fr 1fr 1fr;
-      grid-template-rows: 1/2fr 1fr 1fr;
-  row-gap: 50px;
-}
-
-section iframe {
-  width: 100vw;
-}
-
-section p {
-  border: solid black;
-  border-radius: 30px;
-  padding: 10px;
-  color: #f0e14a;
-  background-color: #e89ac7;
-  font-family: "Indie Flower", cursive;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=gallery.css.map */

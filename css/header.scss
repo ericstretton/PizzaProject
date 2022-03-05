@@ -1,10 +1,19 @@
-
+@import '_variables';
 header{
-    display:grid;
-    grid-template-columns: 1fr 3fr 1fr ;
-    background-color: aqua;
-    min-height: 10vh;
+    display: grid; 
+    grid-template-columns: 1fr 3fr 2fr;
+    justify-items: center;
+    position: fixed;
+    top: 0;
+    background-color: $font_color;
+    min-height: 8vh;
     width: 100vw;
+    z-index: 1;
+    #title{display: grid;
+        grid-template-columns: 1fr 4fr;
+        h2{display: block;
+        font-family: $title_font;}
+    }
     
     /* width: 100vw;
     position: fixed;
@@ -25,29 +34,20 @@ header{
     border-radius: 12px;
     justify-content: center;
     width: 15vw;
-    z-index: 11;
 }
-#menu:focus{
+#menu:focus-within{
     pointer-events: none;
 }
-
-#menu:focus #dropdown{
+#menu:focus-within #dropdown{
     display: block;
     pointer-events: all;
 }
-li{
-    display: inline-block;
-}
-li a{display: block;
 
-
-}
-div img,h1{
-    display: inline-block;
-}
+// div img,h1{
+//     display: inline-block;
+// }
 img{
-    width: 45px;
-    
+    width: 35px;
 }
 
 /* @media  screen and(min-width:600px){
