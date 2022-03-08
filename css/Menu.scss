@@ -6,28 +6,28 @@
     padding: 0;
 }
 #grid_container{
-    display: grid;
     background-color: $page_background;
-    z-index: 0;
+    height: 110%;
+    
 }
 
-Section{
+section{
     display: grid;
     position: relative;
     top: 9vh;
-    grid-template-rows:  1fr 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr;
+    max-height: 150px;
+    row-gap: 10px;
     #title{background-color: $background;
         border: solid black;
         border-radius: 20px;
         padding: 10px;
         h1{
-            position: absolute;
-            left: 30%;
+            text-align: center;
         }
-        img{
-            float: inline-end;
-        }}
+       }
 }
+
 
 #menu_categories{
     display: grid;
@@ -44,35 +44,40 @@ Section{
         border: solid black;
         border-radius: 8px;
     }
-    #dessert_category:hover{
-        font-size: 1.25em;
-    }
-    #pizza_category:hover{
-        font-size: 1.25em;
-    }
-    #pasta_category:hover{
-        font-size: 1.25em;
-    }
 
-    #pizza_category:focus-within{
-        .pasta_menu_items{
-            display: none;
-        }
-        .dessert_menu_items{
-            display: none;
-        }
-    }
+    // #dessert_category:hover{
+    //     font-size: 1.25em;
+    // }
+    // #pizza_category:hover{
+    //     font-size: 1.25em;
+    // }
+    // #pasta_category:hover{
+    //     font-size: 1.25em;
+    // }
+
+
 }
 
-.pizza_menu_items{
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(2, 1fr);
-    #content_shell{background-color: $background;
-        border: solid black;
-        border-radius: 20px;
-        padding: 10px;
-        
-    }
-    
+    .pizza_menu_items{
+        display: grid;
+        position: relative;
+        float: inline-end;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5px;
+        #content_shell{background-color: $background;
+            border: solid black;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        }
+
+
+input[type=radio]
+{
+    background-color: white;
 }
+
+
+
+
+

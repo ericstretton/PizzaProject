@@ -1,18 +1,21 @@
 @import '_variables';
 header{
     display: grid; 
-    grid-template-columns: 1fr 3fr 2fr;
-    justify-items: center;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    text-align: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     background-color: $font_color;
     min-height: 8vh;
     width: 100vw;
     z-index: 1;
-    #title{display: grid;
+    #title{
+        display: grid;
         grid-template-columns: 1fr 4fr;
-        h2{display: block;
-        font-family: $title_font;}
+            h2{display: block;
+            font-family: $title_font;
+            text-align: center;}
     }
     
     /* width: 100vw;

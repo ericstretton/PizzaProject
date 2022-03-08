@@ -1,9 +1,12 @@
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 3fr 2fr;
-      grid-template-columns: 1fr 3fr 2fr;
-  justify-items: center;
+  -ms-grid-columns: 0.5fr 2fr 1fr;
+      grid-template-columns: 0.5fr 2fr 1fr;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   top: 0;
   background-color: #f0e14a;
@@ -28,6 +31,7 @@ header #title {
 header #title h2 {
   display: block;
   font-family: "Courgette", cursive;
+  text-align: center;
 }
 
 #menu {
@@ -90,11 +94,7 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 2fr 1fr;
       grid-template-columns: 1fr 2fr 1fr;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   bottom: 0vh;
   left: 0vw;
   background-color: #f0e14a;
@@ -125,35 +125,30 @@ div img {
 }
 
 #grid_container {
-  display: -ms-grid;
-  display: grid;
   background-color: #97ce4c;
-  z-index: 0;
+  height: 110%;
 }
 
-Section {
+section {
   display: -ms-grid;
   display: grid;
   position: relative;
   top: 9vh;
-  -ms-grid-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 5fr;
+      grid-template-rows: 1fr 1fr 5fr;
+  max-height: 150px;
+  row-gap: 10px;
 }
 
-Section #title {
+section #title {
   background-color: #e89ac7;
   border: solid black;
   border-radius: 20px;
   padding: 10px;
 }
 
-Section #title h1 {
-  position: absolute;
-  left: 30%;
-}
-
-Section #title img {
-  float: inline-end;
+section #title h1 {
+  text-align: center;
 }
 
 #menu_categories {
@@ -179,32 +174,15 @@ Section #title img {
   border-radius: 8px;
 }
 
-#menu_categories #dessert_category:hover {
-  font-size: 1.25em;
-}
-
-#menu_categories #pizza_category:hover {
-  font-size: 1.25em;
-}
-
-#menu_categories #pasta_category:hover {
-  font-size: 1.25em;
-}
-
-#menu_categories #pizza_category:focus-within .pasta_menu_items {
-  display: none;
-}
-
-#menu_categories #pizza_category:focus-within .dessert_menu_items {
-  display: none;
-}
-
 .pizza_menu_items {
   display: -ms-grid;
   display: grid;
   position: relative;
+  float: inline-end;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
 }
 
 .pizza_menu_items #content_shell {
@@ -212,5 +190,9 @@ Section #title img {
   border: solid black;
   border-radius: 20px;
   padding: 10px;
+}
+
+input[type=radio] {
+  background-color: white;
 }
 /*# sourceMappingURL=Menu.css.map */

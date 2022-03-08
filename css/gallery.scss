@@ -1,11 +1,48 @@
 @import '_variables';
-@import 'header.scss';
+@import '_header';
 @import '_footer';
 *{
     margin:0;
     padding: 0;
 }
+
+
 #grid_container{
     display: grid;
+    position: relative;
+    top: 8vh;
+    grid-template-rows: 0.25fr 5fr;
     background-color: $page_background;
+    height: 100vh;
+    text-align: center;
+    justify-items: center;
+    
+}
+
+section{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 10px;
+    width: 95%;
+    
+
+
+}
+
+
+.img_row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    
+div{
+    background-color: $background;
+        border: solid black;
+        border-radius: 15px;
+        padding: 8px;
+        justify-items: center;
+        img{
+            width: 100%;
+        }
+}
 }

@@ -21,6 +21,10 @@ section{
         iframe{
             width:100vw;
         };
+        h2{
+            text-align: center;
+            font-family: $title_font;
+        };
         p{
             border: solid black;
             border-radius: 30px;
