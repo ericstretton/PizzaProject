@@ -8,7 +8,6 @@
 #grid_container{
     background-color: $page_background;
     height: 110%;
-    
 }
 
 section{
@@ -18,10 +17,14 @@ section{
     grid-template-rows: 1fr 1fr 5fr;
     max-height: 150px;
     row-gap: 10px;
+    width: 95vw;
+
+    
     #title{background-color: $background;
         border: solid black;
         border-radius: 20px;
         padding: 10px;
+        width: 95vw;
         h1{
             text-align: center;
         }
@@ -40,21 +43,29 @@ div.sub .pizza_content{
     display: all;
 }
 
+div.sub .pasta_content{
+    display: all;
+}
+
 input[type=radio]:checked ~ .sub
 {
     display: block;
 }
 
-input[type=radio]:checked .pizza_content{
-    border: solid red;
-}
 
 input[type=radio]:hover{
     background-color: $alternate_background
 }
+.pizza_content, .dessert_content, .pasta_content{
+    position: absolute;
+    top: 15vh;
+    left: 0vw;
+}
+
 
 
 #menu_categories{
+    width: 100vw;
     ul{
         display: grid;
         position: relative;
