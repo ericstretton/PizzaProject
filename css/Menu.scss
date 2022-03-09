@@ -28,36 +28,50 @@ section{
        }
 }
 
-
-#menu_categories{
-    display: grid;
-    position: relative;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
-    justify-content: center;
-    background-color: $alternate_background;
-    border: solid black;
-    border-radius: 20px;
-    padding: 10px;
-    button{
-        background-color: $alternate_background;
-        border: solid black;
-        border-radius: 8px;
-    }
-
-    // #dessert_category:hover{
-    //     font-size: 1.25em;
-    // }
-    // #pizza_category:hover{
-    //     font-size: 1.25em;
-    // }
-    // #pasta_category:hover{
-    //     font-size: 1.25em;
-    // }
-
-
+input[type=radio]{
+    background-color: white;
+    cursor: pointer;
+}
+div.sub{
+    display: none;
 }
 
+div.sub .pizza_content{
+    display: all;
+}
+
+input[type=radio]:checked ~ .sub
+{
+    display: block;
+}
+
+input[type=radio]:checked .pizza_content{
+    border: solid red;
+}
+
+input[type=radio]:hover{
+    background-color: $alternate_background
+}
+
+
+#menu_categories{
+    ul{
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        justify-items: center;
+        background-color: $alternate_background;
+        border: solid black;
+        border-radius: 20px;
+        padding: 10px;
+            button{
+                background-color: $alternate_background;
+                border: solid black;
+                border-radius: 8px;
+            }
+}
+}
     .pizza_menu_items{
         display: grid;
         position: relative;
@@ -71,12 +85,39 @@ section{
         }
         }
 
+    .dessert_menu_items{
+            display: grid;
+            position: relative;
+            float: inline-end;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 5px;
+            #content_shell{background-color: $background;
+                border: solid black;
+                border-radius: 20px;
+                padding: 10px;
+            }
+            }
 
-input[type=radio]
-{
-    background-color: white;
+    .pasta_menu_items{
+                display: grid;
+                position: relative;
+                float: inline-end;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 5px;
+                #content_shell{background-color: $background;
+                    border: solid black;
+                    border-radius: 20px;
+                    padding: 10px;
+                }
+                }
+
+
+
+
+
+@media  screen and(min-width:600px){
+
 }
-
 
 
 

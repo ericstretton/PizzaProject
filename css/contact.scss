@@ -63,3 +63,18 @@
         border: none;
     }
 }
+
+
+@media  screen and(min-width:600px){
+    #grid_container > #info{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        .one{grid-column: 1;
+
+        }
+        .two{
+            grid-column: 1/ 1 ;
+        
+        }
+    }
+}

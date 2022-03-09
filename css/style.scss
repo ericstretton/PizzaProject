@@ -37,10 +37,32 @@ section{
 
 
 
-// @media  screen and(min-width:600px){
+@media  screen and(min-width:600px){
+    #content{
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr );
+        
+        
+    #video{
+        position: relative;
+        top: 15vh;
+    }    
+    #video > iframe{
+        position: absolute;
+        float: inline-end;
+        border: solid black;
+        background-color: $background;
+        left: 5vw;
+        padding: 10px;
+        border-radius: 15px;
+        width: 41vw;
+        
+        
+    }
     
-// }
-
+}
+}
 
 // @media screen and(min-width:1000px){
 

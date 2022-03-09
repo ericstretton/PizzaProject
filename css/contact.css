@@ -4,15 +4,14 @@ header {
   -ms-grid-columns: 0.5fr 2fr 1fr;
       grid-template-columns: 0.5fr 2fr 1fr;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
   position: fixed;
   top: 0;
   background-color: #f0e14a;
   min-height: 8vh;
   width: 100vw;
   z-index: 1;
+  border: 5px solid black;
   /* width: 100vw;
     position: fixed;
     grid-template-columns: 1fr 1fr 2fr 1fr;
@@ -34,6 +33,12 @@ header #title h2 {
   text-align: center;
 }
 
+header #phone {
+  font-family: "Indie Flower", cursive;
+  color: #f0e14a;
+  text-decoration: none;
+}
+
 #menu {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -45,13 +50,27 @@ header #title h2 {
 #dropdown {
   display: none;
   position: absolute;
-  background-color: blueviolet;
+  background-color: #e89ac7;
   border: solid black;
   border-radius: 12px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 15vw;
+  width: 99vw;
+  left: 0;
+  top: 5vh;
+  font-family: "Courgette", cursive;
+}
+
+#dropdown ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#dropdown ul li {
+  list-style-type: none;
 }
 
 #menu:focus-within {
@@ -67,27 +86,19 @@ img {
   width: 35px;
 }
 
-/* @media  screen and(min-width:600px){
-    
-    .WebSiteHeader{
-        display: grid;
-        grid-template-columns: auto;}
-
-    #MobileNavButton{z-index: -10;
-        opacity: 0;
-    }
-    #HeaderLogo{
-         position: absolute;    
-    }
-   
-   
-
+@media screen and (min-width: 600px) {
+  .WebSiteHeader {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #MobileNavButton {
+    z-index: -10;
+    opacity: 0;
+  }
 }
 
-
-@media screen and(min-width:1000px){
-
-} */
 footer {
   position: fixed;
   display: -ms-grid;
@@ -192,5 +203,22 @@ div img {
   margin: 0;
   scroll-behavior: none;
   border: none;
+}
+
+@media screen and (min-width: 600px) {
+  #grid_container > #info {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+  }
+  #grid_container > #info .one {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  #grid_container > #info .two {
+    -ms-grid-column: 1;
+    grid-column: 1/ 1;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
