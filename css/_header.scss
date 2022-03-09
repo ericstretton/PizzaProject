@@ -77,7 +77,11 @@ img{
 
 @media  screen and(min-width:600px){
     
-   
+   .is_disabled{
+        color: currentColor;
+       pointer-events: none;
+       
+   }
    
 
 }
