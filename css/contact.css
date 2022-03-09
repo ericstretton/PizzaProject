@@ -88,7 +88,7 @@ img {
   width: 35px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .is_disabled {
     color: currentColor;
     pointer-events: none;
@@ -123,12 +123,6 @@ div img {
   display: block;
 }
 
-/* @media  screen and(min-width:600px){
-    
-}
-
-
-@media screen and(min-width:1000px){} */
 * {
   margin: 0;
   padding: 0;
@@ -214,7 +208,7 @@ div img {
   border: none;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   #grid_container > #info {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
