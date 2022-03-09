@@ -156,7 +156,9 @@ section #title {
   border: solid black;
   border-radius: 20px;
   padding: 10px;
-  width: 95vw;
+  width: 100vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 section #title h1 {

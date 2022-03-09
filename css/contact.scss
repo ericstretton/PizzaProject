@@ -16,25 +16,33 @@
     position: relative;
     display: grid;
     grid-template-rows: 0.25fr 0.75fr 0.25fr 1.5fr 2fr;
-    justify-content: center;
     top: 10vh;
+    box-sizing: border-box;
+    
     #title{position: relative;
         height: 5vh;
         justify-content: center;
+        box-sizing: border-box;
         h3{
             font-family: $title_font;
             text-align: center;
         }
     }
-    #content{display: grid;
+    #content{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        box-sizing: border-box;
+        width: 100vw;
         font-family: $content_font;
         color: $font_color;
         background-color: $background;
         border: solid black;
         border-radius: 20px;
         padding: 10px;
+        div{
+            width: 95vw;
+        }
     }
         // div{
         //     border: solid black;
@@ -49,6 +57,7 @@
     text-align:right;
     height:450px;
     width:390px;
+    box-sizing: border-box;
 }
 
 .gmap_canvas {

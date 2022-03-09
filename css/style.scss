@@ -4,13 +4,15 @@
 *{
     margin:0;
     padding: 0;
+    
 }
 #grid_container{
     display: grid;
     height: 115vh;
     grid-template-rows: 2fr 3fr 1fr;
     background-color: $page_background;
-    
+    box-sizing: border-box;
+
 }
 
 section{
@@ -20,13 +22,13 @@ section{
     grid-template-rows: 1/2fr 1fr 1fr;
     row-gap: 50px;
     box-sizing: border-box;
-    width: 90vw;
+    width: 80vw;
 
     div{
         width: fit-content;
     }
         iframe{
-            width:98vw;
+            width:95vw;
         };
         h2{
             text-align: center;
@@ -39,7 +41,7 @@ section{
             color: $font_color;
             background-color: $background;
             font-family: $content_font;
-            width: 95vw;
+            width: 90vw;
         }
             
             

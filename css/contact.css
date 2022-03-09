@@ -149,10 +149,9 @@ div img {
   display: grid;
   -ms-grid-rows: 0.25fr 0.75fr 0.25fr 1.5fr 2fr;
       grid-template-rows: 0.25fr 0.75fr 0.25fr 1.5fr 2fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   top: 10vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #info #title {
@@ -161,6 +160,8 @@ div img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #info #title h3 {
@@ -174,6 +175,9 @@ div img {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   justify-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
   font-family: "Indie Flower", cursive;
   color: #f0e14a;
   background-color: #e89ac7;
@@ -182,11 +186,17 @@ div img {
   padding: 10px;
 }
 
+#info #content div {
+  width: 95vw;
+}
+
 .mapouter {
   position: relative;
   text-align: right;
   height: 450px;
   width: 390px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .gmap_canvas {
