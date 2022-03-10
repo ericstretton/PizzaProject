@@ -149,7 +149,7 @@ section {
   row-gap: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 80vw;
+  width: 100vw;
 }
 
 section div {
@@ -177,7 +177,7 @@ section p {
   width: 90vw;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 725px) {
   #content {
     display: -ms-grid;
     display: grid;

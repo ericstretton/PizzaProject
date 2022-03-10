@@ -22,7 +22,7 @@ section{
     grid-template-rows: 1/2fr 1fr 1fr;
     row-gap: 50px;
     box-sizing: border-box;
-    width: 80vw;
+    width: 100vw;
 
     div{
         width: fit-content;
@@ -49,7 +49,7 @@ section{
 
 
 
-@media  screen and(min-width:700px){
+@media  screen and(min-width:725px){
     #content{
         
         display: grid;
@@ -74,6 +74,7 @@ section{
     }
     
 }
+
 }
 
 // @media screen and(min-width:1000px){
