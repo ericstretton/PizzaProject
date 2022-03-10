@@ -95,6 +95,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  * > header {
+    z-index: 10;
+  }
+}
+
 footer {
   position: fixed;
   display: -ms-grid;
@@ -121,6 +127,12 @@ footer img {
 
 div img {
   display: block;
+}
+
+@media screen and (min-width: 1000px) {
+  * > footer {
+    z-index: 5;
+  }
 }
 
 * {
@@ -276,7 +288,7 @@ input[type=radio]:hover {
 }
 
 @media screen and (min-width: 725px) {
-  * > .sub > .pizza_content, .pasta_content, .dessert_content {
+  .sub > .pizza_content, .pasta_content, .dessert_content {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: (1fr 1fr 1fr 1fr)[4];
@@ -285,11 +297,11 @@ input[type=radio]:hover {
         grid-template-columns: 1fr 1fr 1fr;
     width: 95vw;
   }
-  * > .sub > .pizza_content .dessert_menu_items, * > .sub > .pizza_content .pasta_menu_items, * > .sub > .pizza_content .pizza_menu_items, .pasta_content .dessert_menu_items, .pasta_content .pasta_menu_items, .pasta_content .pizza_menu_items, .dessert_content .dessert_menu_items, .dessert_content .pasta_menu_items, .dessert_content .pizza_menu_items {
+  .sub > .pizza_content .dessert_menu_items, .sub > .pizza_content .pasta_menu_items, .sub > .pizza_content .pizza_menu_items, .pasta_content .dessert_menu_items, .pasta_content .pasta_menu_items, .pasta_content .pizza_menu_items, .dessert_content .dessert_menu_items, .dessert_content .pasta_menu_items, .dessert_content .pizza_menu_items {
     display: block;
     width: 25vw;
   }
-  * > .sub > .pizza_content .dessert_menu_items #content_shell, * > .sub > .pizza_content .pasta_menu_items #content_shell, * > .sub > .pizza_content .pizza_menu_items #content_shell, .pasta_content .dessert_menu_items #content_shell, .pasta_content .pasta_menu_items #content_shell, .pasta_content .pizza_menu_items #content_shell, .dessert_content .dessert_menu_items #content_shell, .dessert_content .pasta_menu_items #content_shell, .dessert_content .pizza_menu_items #content_shell {
+  .sub > .pizza_content .dessert_menu_items #content_shell, .sub > .pizza_content .pasta_menu_items #content_shell, .sub > .pizza_content .pizza_menu_items #content_shell, .pasta_content .dessert_menu_items #content_shell, .pasta_content .pasta_menu_items #content_shell, .pasta_content .pizza_menu_items #content_shell, .dessert_content .dessert_menu_items #content_shell, .dessert_content .pasta_menu_items #content_shell, .dessert_content .pizza_menu_items #content_shell {
     width: 25vw;
   }
   .sub > .dessert_menu_items {
@@ -306,6 +318,13 @@ input[type=radio]:hover {
   }
   section > #menu_categories {
     width: 30vw;
+  }
+  * > html > .sub > .pasta_content, .dessert_content, .pizza_content {
+    position: absolute;
+    height: 70vh;
+    top: 15vh;
+    border: 2px solid black;
+    background-color: #f0e14a;
   }
 }
 /*# sourceMappingURL=Menu.css.map */

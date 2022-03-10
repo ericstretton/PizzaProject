@@ -22,4 +22,9 @@ div img{display: block;
 }
 
 
-@media screen and(min-width:1000px){} 
+@media screen and(min-width:1000px){
+* > footer{
+    z-index: 5;
+}
+
+} 

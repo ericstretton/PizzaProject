@@ -13,6 +13,11 @@
     height: 100vh;
     
 }
+
+#background{
+    display: none;
+}
+
 #info{
     position: relative;
     display: grid;
@@ -61,6 +66,7 @@
     height:45vh;
     width:90vw;
     box-sizing: border-box;
+    display: all;
 }
 
 .gmap_canvas {
@@ -70,7 +76,7 @@
     width:90vw;
     iframe{
         height:45vh;
-    width:90vw;
+        width:90vw;
         margin: 0; 
         scroll-behavior: none;
         border: none;
@@ -84,7 +90,7 @@
        pointer-events: none;
        
    }
-    * > #grid_container{
+     #grid_container{
         display: grid;
         grid-template-rows: 1fr;
         position: absolute;
@@ -140,6 +146,7 @@
                 position: absolute;
                 padding-left: 15px;
                 top: -15vh;
+                display: all;
                 
                 width: 40vw;
                 .gmap_canvas{
@@ -156,4 +163,47 @@
         
     }
    
+}
+
+
+@media screen and(min-width:1000px)
+{
+
+    #grid_container > #background{
+        position: absolute;
+       display: block;
+       width: 100vw;
+       height: 100vh;
+       top: 8vh;
+       left: 0vw;
+       .gmap_canvas{
+        width: 100vw;
+        height: 100vh;
+       iframe{
+        width: 100vw;
+        height: 100vh;
+        left: 10vw;
+       }
+    }
+    }
+     #grid_container > #info{
+
+        height: 100vh;
+    }
+    * > #grid_container > #info > .mapouter{
+        display: none;
+       
+    }
+    * > #grid_container > #info > .gmap_canvas{
+        display: none;
+    }
+
+    * > #grid_container > #info > .gmap_canvas > iframe{
+       display: none;
+    }
+    
+
+    #grid_container > #info > .one, .two, .three, .four{
+        z-index: 1;
+    }
 }
