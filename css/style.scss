@@ -50,18 +50,28 @@ section{
 
 
 @media  screen and(min-width:725px){
+
+    * #grid_container{
+        display: block;
+    }
     #content{
-        
+        width: 100vw;
         display: grid;
         grid-template-columns: repeat(2, 1fr );
-        
+        justify-content: center;
+
+    div{width: 50vw;
+        p{
+            width: 45vw;
+        }
+    }  
         
     #video{
         position: relative;
         top: 15vh;
     }    
     #video > iframe{
-        position: absolute;
+        position: relative;
         float: inline-end;
         border: solid black;
         background-color: $background;

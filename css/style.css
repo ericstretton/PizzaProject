@@ -178,18 +178,31 @@ section p {
 }
 
 @media screen and (min-width: 725px) {
+  * #grid_container {
+    display: block;
+  }
   #content {
+    width: 100vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #content div {
+    width: 50vw;
+  }
+  #content div p {
+    width: 45vw;
   }
   #content #video {
     position: relative;
     top: 15vh;
   }
   #content #video > iframe {
-    position: absolute;
+    position: relative;
     float: inline-end;
     border: solid black;
     background-color: #e89ac7;
