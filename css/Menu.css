@@ -274,4 +274,38 @@ input[type=radio]:hover {
   padding: 10px;
   width: 40vw;
 }
+
+@media screen and (min-width: 725px) {
+  * > .sub > .pizza_content, .pasta_content, .dessert_content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr 1fr 1fr 1fr)[4];
+        grid-template-rows: repeat(4, 1fr 1fr 1fr 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    width: 95vw;
+  }
+  * > .sub > .pizza_content .dessert_menu_items, * > .sub > .pizza_content .pasta_menu_items, * > .sub > .pizza_content .pizza_menu_items, .pasta_content .dessert_menu_items, .pasta_content .pasta_menu_items, .pasta_content .pizza_menu_items, .dessert_content .dessert_menu_items, .dessert_content .pasta_menu_items, .dessert_content .pizza_menu_items {
+    display: block;
+    width: 25vw;
+  }
+  * > .sub > .pizza_content .dessert_menu_items #content_shell, * > .sub > .pizza_content .pasta_menu_items #content_shell, * > .sub > .pizza_content .pizza_menu_items #content_shell, .pasta_content .dessert_menu_items #content_shell, .pasta_content .pasta_menu_items #content_shell, .pasta_content .pizza_menu_items #content_shell, .dessert_content .dessert_menu_items #content_shell, .dessert_content .pasta_menu_items #content_shell, .dessert_content .pizza_menu_items #content_shell {
+    width: 25vw;
+  }
+  .sub > .dessert_menu_items {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  section > #title {
+    position: absolute;
+    display: block;
+    width: 60vw;
+    left: 35vw;
+  }
+  section > #menu_categories {
+    width: 30vw;
+  }
+}
 /*# sourceMappingURL=Menu.css.map */

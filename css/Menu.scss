@@ -59,11 +59,7 @@ input[type=radio]:checked ~ .sub
 input[type=radio]:hover{
     background-color: $alternate_background
 }
-// .pizza_content, .dessert_content, .pasta_content{
-//     position: absolute;
-//     top: 15vh;
-//     left: 0vw;
-// }
+
 
 
 
@@ -136,9 +132,39 @@ input[type=radio]:hover{
 
 
 @media  screen and(min-width:725px){
-
+    * > .sub > .pizza_content, .pasta_content, .dessert_content{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr 1fr 1fr 1fr);
+        grid-template-columns: 1fr 1fr 1fr ;
+        
+        width: 95vw;
+        .dessert_menu_items, .pasta_menu_items, .pizza_menu_items{
+            display: block;
+            width: 25vw;
+            #content_shell{
+                width: 25vw;
+                
+            }
+        }
+       
+    }
+.sub > .dessert_menu_items{
+    display: block;
+}
 }
 
 
+@media screen and(min-width:1000px){
 
+    section > #title{
+        position: absolute;
+        display: block;
+        width: 60vw;
+        left: 35vw;
+    }
+    section > #menu_categories{
+        width: 30vw;
+    }
+    
+}
 
