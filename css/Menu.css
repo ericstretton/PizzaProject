@@ -130,7 +130,9 @@ div img {
 
 #grid_container {
   background-color: #97ce4c;
-  height: 110%;
+  height: 115vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 section {
@@ -184,12 +186,6 @@ input[type=radio]:hover {
   background-color: #f0e14a;
 }
 
-.pizza_content, .dessert_content, .pasta_content {
-  position: absolute;
-  top: 15vh;
-  left: 0vw;
-}
-
 #menu_categories {
   width: 100vw;
 }
@@ -209,63 +205,73 @@ input[type=radio]:hover {
   padding: 10px;
 }
 
-#menu_categories ul button {
-  background-color: #f0e14a;
-  border: solid black;
-  border-radius: 8px;
+.sub {
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 4vw;
+  top: 10vh;
 }
 
-.pizza_menu_items {
+.sub .pizza_menu_items {
   display: -ms-grid;
   display: grid;
   position: relative;
-  float: inline-end;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
+  -webkit-column-gap: 2vw;
+          column-gap: 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.pizza_menu_items #content_shell {
+.sub .pizza_menu_items #content_shell {
   background-color: #e89ac7;
   border: solid black;
   border-radius: 20px;
   padding: 10px;
+  width: 40vw;
 }
 
-.dessert_menu_items {
+.sub .dessert_menu_items {
   display: -ms-grid;
   display: grid;
   position: relative;
-  float: inline-end;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
+  -webkit-column-gap: 2vw;
+          column-gap: 2vw;
+  justify-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.dessert_menu_items #content_shell {
+.sub .dessert_menu_items #content_shell {
   background-color: #e89ac7;
   border: solid black;
   border-radius: 20px;
   padding: 10px;
+  width: 40vw;
 }
 
-.pasta_menu_items {
+.sub .pasta_menu_items {
   display: -ms-grid;
   display: grid;
   position: relative;
-  float: inline-end;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
+  -webkit-column-gap: 2vw;
+          column-gap: 2vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.pasta_menu_items #content_shell {
+.sub .pasta_menu_items #content_shell {
   background-color: #e89ac7;
   border: solid black;
   border-radius: 20px;
   padding: 10px;
+  width: 40vw;
 }
 /*# sourceMappingURL=Menu.css.map */

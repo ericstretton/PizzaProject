@@ -7,7 +7,9 @@
 }
 #grid_container{
     background-color: $page_background;
-    height: 110%;
+    height: 115vh;
+    box-sizing: border-box;
+    
 }
 
 section{
@@ -57,11 +59,11 @@ input[type=radio]:checked ~ .sub
 input[type=radio]:hover{
     background-color: $alternate_background
 }
-.pizza_content, .dessert_content, .pasta_content{
-    position: absolute;
-    top: 15vh;
-    left: 0vw;
-}
+// .pizza_content, .dessert_content, .pasta_content{
+//     position: absolute;
+//     top: 15vh;
+//     left: 0vw;
+// }
 
 
 
@@ -77,57 +79,63 @@ input[type=radio]:hover{
         border: solid black;
         border-radius: 20px;
         padding: 10px;
-            button{
-                background-color: $alternate_background;
-                border: solid black;
-                border-radius: 8px;
-            }
+            
 }
 }
+
+.sub{
+    position: absolute;
+    justify-content: center;
+    left: 4vw;
+    top: 10vh;
     .pizza_menu_items{
         display: grid;
         position: relative;
-        float: inline-end;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 5px;
+        column-gap: 2vw;
+        box-sizing: border-box;
         #content_shell{background-color: $background;
             border: solid black;
             border-radius: 20px;
             padding: 10px;
+            width: 40vw;
         }
         }
 
     .dessert_menu_items{
             display: grid;
             position: relative;
-            float: inline-end;
             grid-template-columns: repeat(2, 1fr);
-            column-gap: 5px;
+            column-gap: 2vw;
+            justify-items: center;
+            box-sizing: border-box;
             #content_shell{background-color: $background;
                 border: solid black;
                 border-radius: 20px;
                 padding: 10px;
+                width: 40vw;
             }
             }
 
     .pasta_menu_items{
                 display: grid;
                 position: relative;
-                float: inline-end;
                 grid-template-columns: repeat(2, 1fr);
-                column-gap: 5px;
+                column-gap: 2vw;
+                box-sizing: border-box;
                 #content_shell{background-color: $background;
                     border: solid black;
                     border-radius: 20px;
                     padding: 10px;
+                    width: 40vw;
                 }
                 }
 
+            }
 
 
 
-
-@media  screen and(min-width:700px){
+@media  screen and(min-width:725px){
 
 }
 
