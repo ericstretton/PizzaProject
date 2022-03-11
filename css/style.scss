@@ -16,7 +16,7 @@
 }
 
 section{
-    top: 10vh;
+    top: 20vh;
     position: relative;
     display: grid;
     grid-template-rows: 1/2fr 1fr 1fr;
@@ -25,7 +25,14 @@ section{
     justify-items: center;
     width: 100vw;
 
-   
+   img{
+       position: absolute;
+       display: sticky;
+       width: 30vw;
+       left: 0;
+       top: -12vh;
+       z-index: -1;
+   }
         
         div{
             justify-content: center;
@@ -72,33 +79,34 @@ section{
         display: grid;
         grid-template-columns: repeat(2, 1fr );
         justify-content: center;
+        top: 12vh;
+        img{display: inline;
+            position: relative;
+            grid-column: 2;
+            grid-row: 1;
+            top: -5vh;
+            left: -15vw;
+            width: 20vw;
+            
+        }
 
     div{width: 50vw;
         p{
             width: 45vw;
         }
     }  
-        
-    #video{
-        position: relative;
-        top: 15vh;
     }    
     #video > iframe{
-        position: relative;
-        float: inline-end;
-        border: solid black;
-        background-color: $background;
-        left: 5vw;
-        padding: 10px;
-        border-radius: 15px;
         width: 41vw;
-        
+        grid-column: 2;
+        grid-row: 1;
+        top: 10vh;
         
     }
     
 }
 
-}
+
 
 @media screen and(min-width:1000px){
 
