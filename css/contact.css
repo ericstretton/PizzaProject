@@ -325,7 +325,17 @@ div img {
     left: 10vw;
   }
   #grid_container > #info {
-    height: 100vh;
+    top: 20vh;
+    height: 70vh;
+    row-gap: 45px;
+    background-color: #f0e14a;
+    width: 40vw;
+  }
+  #grid_container > #info .two > #content {
+    width: 40vw;
+  }
+  #grid_container > #info .four > #content {
+    width: 40vw;
   }
   * > #grid_container > #info > .mapouter {
     display: none;

@@ -187,8 +187,17 @@
     }
     }
      #grid_container > #info{
-
-        height: 100vh;
+        top: 20vh;
+        height: 70vh;
+        row-gap: 45px;
+        background-color: $alternate_background;
+        width: 40vw;
+        .two > #content{
+            width: 40vw;
+        }
+        .four > #content{
+            width: 40vw;
+        }
     }
     * > #grid_container > #info > .mapouter{
         display: none;
