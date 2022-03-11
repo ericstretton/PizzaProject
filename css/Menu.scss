@@ -22,29 +22,37 @@ section{
     width: 95vw;
 
     
+    img{
+        position: relative;
+        left: -10vw;
+        min-width: 40vw;
+        
+    }
     #title{
         background-color: $background;
         border: solid black;
         border-radius: 20px;
         padding: 10px;
-        width: 100vw;
+        width: 70vw;
         box-sizing: border-box;
-        
+        position: absolute;
+        left: 25vw;
+        top: 5vh;
         h1{
             text-align: center;
         }
-        img{
-            position: relative;
-            left: 25vw;
-            min-width: 40vw;
-            
-        }
+        
     }
 }
 
 input[type=radio]{
     background-color: white;
     cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    width: 70px;
+    height: 25px;
+    
 }
 div.sub{
     display: none;
@@ -65,7 +73,7 @@ input[type=radio]:checked ~ .sub
 
 
 input[type=radio]:hover{
-    background-color: $alternate_background
+    background-color: $background
 }
 
 
@@ -179,7 +187,8 @@ input[type=radio]:hover{
     
      .pasta_content, .dessert_content, .pizza_content{
         position: absolute;
-        height: 70vh;
+        
+        height: 50vh;
         top: 35vh;
         border: 2px solid black;
         background-color: $alternate_background;

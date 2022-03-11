@@ -184,6 +184,9 @@ section {
     -webkit-column-gap: 10px;
             column-gap: 10px;
   }
+  .image_content .img_row {
+    display: block;
+  }
   .image_content .img_row div {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
