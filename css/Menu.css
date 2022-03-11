@@ -14,12 +14,6 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 2px solid black;
-  /* width: 100vw;
-    position: fixed;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
-    grid-template-areas: "img . h1 a";
-    justify-content: "start start center end";
-    z-index: 10; */
 }
 
 header #title {
@@ -37,8 +31,6 @@ header #title h2 {
 
 header a {
   font-family: "Indie Flower", cursive;
-  color: black;
-  text-decoration: none;
 }
 
 #menu {
@@ -88,10 +80,11 @@ img {
   width: 35px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 725px) {
   .is_disabled {
     color: currentColor;
     pointer-events: none;
+    text-decoration: none;
   }
 }
 
@@ -173,6 +166,12 @@ section #title h1 {
   text-align: center;
 }
 
+section #title img {
+  position: relative;
+  left: 25vw;
+  min-width: 40vw;
+}
+
 input[type=radio] {
   background-color: white;
   cursor: pointer;
@@ -199,7 +198,7 @@ input[type=radio]:hover {
 }
 
 #menu_categories {
-  width: 100vw;
+  width: 95vw;
 }
 
 #menu_categories ul {
@@ -222,7 +221,7 @@ input[type=radio]:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  left: 4vw;
+  left: 2vw;
   top: 10vh;
 }
 
@@ -295,7 +294,8 @@ input[type=radio]:hover {
         grid-template-rows: repeat(4, 1fr 1fr 1fr 1fr);
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    width: 95vw;
+    left: 0vw;
+    width: 90vw;
   }
   .sub > .pizza_content .dessert_menu_items, .sub > .pizza_content .pasta_menu_items, .sub > .pizza_content .pizza_menu_items, .pasta_content .dessert_menu_items, .pasta_content .pasta_menu_items, .pasta_content .pizza_menu_items, .dessert_content .dessert_menu_items, .dessert_content .pasta_menu_items, .dessert_content .pizza_menu_items {
     display: block;
@@ -316,13 +316,16 @@ input[type=radio]:hover {
     width: 60vw;
     left: 35vw;
   }
+  section > #title img {
+    left: 8vw;
+  }
   section > #menu_categories {
     width: 30vw;
   }
   .pasta_content, .dessert_content, .pizza_content {
     position: absolute;
     height: 70vh;
-    top: 15vh;
+    top: 35vh;
     border: 2px solid black;
     background-color: #f0e14a;
   }

@@ -23,17 +23,8 @@ header{
     }
     a{
         font-family: $content_font;
-        color: black;
-        text-decoration: none;
-        
     }
     
-    /* width: 100vw;
-    position: fixed;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
-    grid-template-areas: "img . h1 a";
-    justify-content: "start start center end";
-    z-index: 10; */
 }
 #menu{
     user-select: none;
@@ -68,18 +59,17 @@ header{
     pointer-events: all;
 }
 
-// div img,h1{
-//     display: inline-block;
-// }
+
 img{
     width: 35px;
 }
 
-@media  screen and(min-width:700px){
+@media  screen and(min-width:725px){
     
    .is_disabled{
         color: currentColor;
        pointer-events: none;
+       text-decoration: none;
        
    }
    
