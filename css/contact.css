@@ -89,8 +89,33 @@ img {
 }
 
 @media screen and (min-width: 1000px) {
-  * > header {
+  header {
+    height: 10vh;
     z-index: 10;
+  }
+  #menu > label > img {
+    opacity: 0;
+  }
+  #dropdown {
+    display: inline-block;
+    border: none;
+    width: 30vw;
+    left: 30vw;
+    background-color: #f0e14a;
+  }
+  #dropdown ul {
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+  #dropdown ul li {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #e89ac7;
+  }
+  #dropdown ul li a {
+    text-decoration: none;
+    font-family: "Indie Flower", cursive;
+    color: #f0e14a;
   }
 }
 
