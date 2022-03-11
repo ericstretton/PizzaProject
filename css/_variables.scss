@@ -1,6 +1,11 @@
+@font-face {
+    font-family: Customfont;
+    src: url(/fonts/get_schwifty.ttf);
+}
 $font_color: #f0e14a;
 $background: #e89ac7;
 $page_background: #97ce4c;
-$title_font:'Courgette', cursive;
+$title_font:"Customfont";
 $content_font: 'Indie Flower', cursive;
 $alternate_background: #f0e14a;
+$rick_morty_font: "Customfont";

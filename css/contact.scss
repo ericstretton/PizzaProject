@@ -1,6 +1,7 @@
 @import '_variables';
 @import '_header';
 @import '_footer';
+
 *{
     margin:0;
     padding: 0;
@@ -50,12 +51,7 @@
             width: 95vw;
         }
     }
-        // div{
-        //     border: solid black;
-        //     border-radius: 30px;
-        //     padding: 10px;
-        //     color: $font_color;
-        //     background-color: $Background;};
+
             
 }
 .mapouter{
@@ -199,15 +195,15 @@
             width: 40vw;
         }
     }
-    * > #grid_container > #info > .mapouter{
+     #grid_container > #info > .mapouter{
         display: none;
        
     }
-    * > #grid_container > #info > .gmap_canvas{
+     #grid_container > #info > .gmap_canvas{
         display: none;
     }
 
-    * > #grid_container > #info > .gmap_canvas > iframe{
+     #grid_container > #info > .gmap_canvas > iframe{
        display: none;
     }
     
