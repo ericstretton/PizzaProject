@@ -22,14 +22,15 @@ section{
     grid-template-rows: 1/2fr 1fr 1fr;
     row-gap: 50px;
     box-sizing: border-box;
+    justify-items: center;
     width: 100vw;
 
-    div{
-        width: fit-content;
-    }
-        iframe{
-            width:95vw;
-        };
+   
+        
+        div{
+            justify-content: center;
+            
+        
         h2{
             text-align: center;
             font-family: $title_font;
@@ -41,9 +42,21 @@ section{
             color: $font_color;
             background-color: $background;
             font-family: $content_font;
-            width: 90vw;
-        }
+            width: 92vw;
             
+        }
+        iframe{
+            position: absolute;
+            width: 92%;
+            height: 325px;
+            border: solid black;
+            border-radius: 30px;
+            background-color: $background;
+            padding: 10px;
+            left: 0.5vw;
+            
+        }
+    }   
             
 }
 

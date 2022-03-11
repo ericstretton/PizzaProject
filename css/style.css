@@ -189,32 +189,40 @@ section {
   row-gap: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  justify-items: center;
   width: 100vw;
 }
 
 section div {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-section iframe {
-  width: 95vw;
-}
-
-section h2 {
+section div h2 {
   text-align: center;
   font-family: "Customfont";
 }
 
-section p {
+section div p {
   border: solid black;
   border-radius: 30px;
   padding: 10px;
   color: #f0e14a;
   background-color: #e89ac7;
   font-family: "Indie Flower", cursive;
-  width: 90vw;
+  width: 92vw;
+}
+
+section div iframe {
+  position: absolute;
+  width: 92%;
+  height: 325px;
+  border: solid black;
+  border-radius: 30px;
+  background-color: #e89ac7;
+  padding: 10px;
+  left: 0.5vw;
 }
 
 @media screen and (min-width: 725px) {
