@@ -37,6 +37,7 @@ header #title h2 {
   display: block;
   font-family: "Customfont";
   text-align: center;
+  color: #34c9dd;
 }
 
 header a {
@@ -103,6 +104,19 @@ img {
     height: 10vh;
     z-index: 10;
   }
+  header #title a {
+    left: 0;
+    position: absolute;
+  }
+  header #title a img {
+    width: 100px;
+  }
+  header #title h2 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    font-size: 36px;
+    width: 35vw;
+  }
   #menu > label > img {
     opacity: 0;
   }
@@ -147,6 +161,7 @@ footer {
 
 footer h2 {
   font-family: "Customfont";
+  color: #34c9dd;
 }
 
 footer img {
@@ -171,11 +186,11 @@ div img {
 #grid_container {
   display: -ms-grid;
   display: grid;
-  background-color: #97ce4c;
+  background-color: #3a4767;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-row-gap: 15vh;
-  height: 100vh;
+  height: 125vh;
 }
 
 #background {
@@ -191,21 +206,25 @@ div img {
   top: 10vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  justify-items: center;
 }
 
 #info #title {
   position: relative;
   height: 5vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 #info #title h3 {
+  color: #34c9dd;
   font-family: "Customfont";
   text-align: center;
+  background-color: #f0e14a;
+  width: 25vw;
+  border: solid black;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 #info #content {
@@ -233,7 +252,6 @@ div img {
   position: relative;
   text-align: right;
   top: 2vh;
-  left: 5vw;
   height: 45vh;
   width: 90vw;
   -webkit-box-sizing: border-box;
@@ -267,18 +285,20 @@ div img {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     position: absolute;
+    height: 100vh;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
   #grid_container #info {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 2fr 1fr 3fr;
         grid-template-rows: 1fr 2fr 1fr 3fr;
     position: absolute;
     width: 100vw;
+    height: 100vh;
     row-gap: 4vh;
   }
   #grid_container #info .one {
@@ -287,10 +307,11 @@ div img {
     -ms-grid-row: 1;
     grid-row: 1;
     position: relative;
+    top: 2vh;
   }
   #grid_container #info .two {
     position: relative;
-    top: 5vh;
+    top: 8vh;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 1;
@@ -305,13 +326,11 @@ div img {
     grid-column: 1;
     -ms-grid-row: 2;
     grid-row: 2;
-  }
-  #grid_container #info .three div {
-    width: 50vw;
+    top: 5vh;
   }
   #grid_container #info .four {
     position: relative;
-    top: 5vh;
+    top: 11vh;
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 2;
@@ -356,20 +375,30 @@ div img {
   }
   #grid_container > #background .gmap_canvas iframe {
     width: 100vw;
-    height: 100vh;
+    height: 97vh;
     left: 10vw;
   }
   #grid_container > #info {
     top: 20vh;
     height: 70vh;
-    row-gap: 45px;
     background-color: #f0e14a;
-    width: 40vw;
+    width: 43vw;
+    padding-left: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
   }
-  #grid_container > #info .two > #content {
-    width: 40vw;
+  #grid_container > #info .two, #grid_container > #info #content_container {
+    display: -ms-grid;
+    display: grid;
+    row-gap: 15px;
   }
-  #grid_container > #info .four > #content {
+  #grid_container > #info .one h3, #grid_container > #info .three h3 {
+    background-color: #3a4767;
+  }
+  #grid_container > #info .one, #grid_container > #info .three, #grid_container > #info .four {
+    left: -5vw;
+  }
+  #grid_container > #info .one > #content, #grid_container > #info .two > #content, #grid_container > #info .four > #content {
     width: 40vw;
   }
   #grid_container > #info > .mapouter {
@@ -380,9 +409,6 @@ div img {
   }
   #grid_container > #info > .gmap_canvas > iframe {
     display: none;
-  }
-  #grid_container > #info > .one, .two, .three, .four {
-    z-index: 1;
   }
 }
 /*# sourceMappingURL=contact.css.map */

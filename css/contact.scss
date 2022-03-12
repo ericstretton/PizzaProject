@@ -11,7 +11,7 @@
     background-color: $page_background;
     grid-template-rows: 1fr 1fr;
     grid-row-gap:15vh;
-    height: 100vh;
+    height: 125vh;
     
 }
 
@@ -25,14 +25,21 @@
     grid-template-rows: 0.25fr 0.75fr 0.25fr 1.5fr 2fr;
     top: 10vh;
     box-sizing: border-box;
-    
+    justify-items: center;
+
     #title{position: relative;
         height: 5vh;
-        justify-content: center;
         box-sizing: border-box;
         h3{
+            color: $title_font_color;
             font-family: $title_font;
             text-align: center;
+            background-color: $alternate_background;
+            width: 25vw;
+            border: solid black;
+            border-radius: 10px;
+            padding: 10px;
+            
         }
     }
     #content{
@@ -58,7 +65,7 @@
     position:relative;
     text-align:right;
     top: 2vh;
-    left: 5vw;
+    
     height:45vh;
     width:90vw;
     box-sizing: border-box;
@@ -90,27 +97,29 @@
         display: grid;
         grid-template-rows: 1fr;
         position: absolute;
-        
+        height: 100vh;
         box-sizing: border-box;
 
         #info{
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 2fr 1fr 3fr;
             position: absolute;
             width: 100vw;
+            height: 100vh;
             row-gap: 4vh;
 
             .one{
                 grid-column: 1;
                 grid-row: 1;
                 position: relative;
+                top: 2vh;
                 
                 
             }
             .two{
                 position: relative;
-                top: 5vh;
+                top: 8vh;
                 grid-column: 1;
                 grid-row: 1;
                 width: 50vw;
@@ -121,15 +130,12 @@
             .three{
                 grid-column: 1;
                 grid-row: 2;
+                top: 5vh;
                 
-                div{
-                    width: 50vw;
-                    
-                }
             }
             .four{
                 position: relative;
-                top: 5vh;
+                top: 11vh;
                 grid-column: 1;
                 grid-row: 2;
                 div{
@@ -177,7 +183,7 @@
         height: 100vh;
        iframe{
         width: 100vw;
-        height: 100vh;
+        height: 97vh;
         left: 10vw;
        }
     }
@@ -185,15 +191,29 @@
      #grid_container > #info{
         top: 20vh;
         height: 70vh;
-        row-gap: 45px;
         background-color: $alternate_background;
-        width: 40vw;
-        .two > #content{
+        width: 43vw;
+        padding-left: 20px;
+        border: 2px solid black;
+        border-radius: 15px;
+        .two, #content_container{
+            display: grid;
+            row-gap: 15px;
+        }
+        .one, .three{
+            h3{
+                background-color: $page_background;
+            }
+        }
+        .one, .three, .four{
+            left: -5vw;
+        }
+        
+        .one > #content, .two > #content, .four > #content{
             width: 40vw;
         }
-        .four > #content{
-            width: 40vw;
-        }
+       
+
     }
      #grid_container > #info > .mapouter{
         display: none;
@@ -208,7 +228,5 @@
     }
     
 
-    #grid_container > #info > .one, .two, .three, .four{
-        z-index: 1;
-    }
+
 }

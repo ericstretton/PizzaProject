@@ -41,6 +41,8 @@ section{
         h2{
             text-align: center;
             font-family: $title_font;
+            color: $title_font_color;
+            font-size: 30px;
         };
         p{
             border: solid black;

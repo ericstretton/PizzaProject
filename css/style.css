@@ -37,6 +37,7 @@ header #title h2 {
   display: block;
   font-family: "Customfont";
   text-align: center;
+  color: #34c9dd;
 }
 
 header a {
@@ -103,6 +104,19 @@ img {
     height: 10vh;
     z-index: 10;
   }
+  header #title a {
+    left: 0;
+    position: absolute;
+  }
+  header #title a img {
+    width: 100px;
+  }
+  header #title h2 {
+    -ms-grid-column: 2;
+    grid-column: 2;
+    font-size: 36px;
+    width: 35vw;
+  }
   #menu > label > img {
     opacity: 0;
   }
@@ -147,6 +161,7 @@ footer {
 
 footer h2 {
   font-family: "Customfont";
+  color: #34c9dd;
 }
 
 footer img {
@@ -174,7 +189,7 @@ div img {
   height: 115vh;
   -ms-grid-rows: 2fr 3fr 1fr;
       grid-template-rows: 2fr 3fr 1fr;
-  background-color: #97ce4c;
+  background-color: #3a4767;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -211,6 +226,8 @@ section div {
 section div h2 {
   text-align: center;
   font-family: "Customfont";
+  color: #34c9dd;
+  font-size: 30px;
 }
 
 section div p {

@@ -6,8 +6,8 @@
     padding: 0;
 }
 #grid_container{
-    background-color: $page_background;
-    height: 115vh;
+    background-color: #3a4767;
+    height: 100vh;
     box-sizing: border-box;
     
 }
@@ -40,6 +40,7 @@ section{
         top: 5vh;
         h1{
             text-align: center;
+            color: $font_color;
         }
         
     }
@@ -81,6 +82,8 @@ input[type=radio]:hover{
 
 #menu_categories{
     width: 95vw;
+    font-family: $title_font;
+    color: $title_font_color;
     ul{
         display: grid;
         position: relative;
@@ -91,6 +94,14 @@ input[type=radio]:hover{
         border: solid black;
         border-radius: 20px;
         padding: 10px;
+      .sub{
+          .pizza_menu_items, .pasta_menu_items, .dessert_menu_items{
+            #content_shell{
+                font-family: $content_font;
+                color: $font_color;
+            }
+          }
+      }  
             
 }
 }
@@ -100,17 +111,21 @@ input[type=radio]:hover{
     justify-content: center;
     left: 2vw;
     top: 10vh;
+    
     .pizza_menu_items{
         display: grid;
         position: relative;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2vw;
         box-sizing: border-box;
+        
+
         #content_shell{background-color: $background;
             border: solid black;
             border-radius: 20px;
             padding: 10px;
             width: 40vw;
+            font-family: $content_font;
         }
         }
 
@@ -196,7 +211,7 @@ input[type=radio]:hover{
          position: absolute;
         justify-items: center;
         width: 65vw;
-        height: 70vh;
+        height: 50vh;
         left: 30vw;
         top: -28vh;
         border: 2px solid black;
