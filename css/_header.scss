@@ -22,9 +22,18 @@ header{
             
             
     }
-    a{
-        font-family: $content_font;
+    #phone_grid{
+        position: relative;
+        display: grid;
+        grid-template-columns: 0.5fr 2fr;
+        #phone_icon{width: 25px;
+        color: blue;
+        }
+        a{
+            font-family: $content_font;
+        }
     }
+    
     
 }
 #menu{
@@ -42,7 +51,8 @@ header{
     width: 99vw;
     left: 0;
     top: 5vh;
-    font-family: $title_font;
+    font-family: $content_font;
+    color: black;
     ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -73,8 +83,15 @@ img{
        text-decoration: none;
        
    }
+   header{
+   #phone_grid{
+       display: block;
    
-
+   #phone_icon{
+       display: none;
+   }
+   }
+}
 }
 
 

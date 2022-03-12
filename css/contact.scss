@@ -12,7 +12,10 @@
     grid-template-rows: 1fr 1fr;
     grid-row-gap:15vh;
     height: 125vh;
-    
+
+    #drooling_rick{
+        display: none;
+    }
 }
 
 #background{
@@ -35,7 +38,7 @@
             font-family: $title_font;
             text-align: center;
             background-color: $alternate_background;
-            width: 35vw;
+            width: 45vw;
             border: solid black;
             border-radius: 10px;
             padding: 10px;
@@ -170,7 +173,17 @@
 
 @media screen and(min-width:1000px)
 {
-
+    #grid_container{
+        #drooling_rick{
+            display: block;
+            position: absolute;
+            left: 80vw;
+            top: 30vh;
+            img{
+                width: 30vh;
+            }
+        }
+    }
     #grid_container > #background{
         position: absolute;
        display: block;

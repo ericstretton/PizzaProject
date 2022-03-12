@@ -40,7 +40,20 @@ header #title h2 {
   color: #34c9dd;
 }
 
-header a {
+header #phone_grid {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 2fr;
+      grid-template-columns: 0.5fr 2fr;
+}
+
+header #phone_grid #phone_icon {
+  width: 25px;
+  color: blue;
+}
+
+header #phone_grid a {
   font-family: "Indie Flower", cursive;
 }
 
@@ -64,7 +77,8 @@ header a {
   width: 99vw;
   left: 0;
   top: 5vh;
-  font-family: "Customfont";
+  font-family: "Indie Flower", cursive;
+  color: black;
 }
 
 #dropdown ul {
@@ -96,6 +110,12 @@ img {
     color: currentColor;
     pointer-events: none;
     text-decoration: none;
+  }
+  header #phone_grid {
+    display: block;
+  }
+  header #phone_grid #phone_icon {
+    display: none;
   }
 }
 
@@ -193,6 +213,10 @@ div img {
   height: 125vh;
 }
 
+#grid_container #drooling_rick {
+  display: none;
+}
+
 #background {
   display: none;
 }
@@ -221,7 +245,7 @@ div img {
   font-family: "Customfont";
   text-align: center;
   background-color: #f0e14a;
-  width: 35vw;
+  width: 45vw;
   border: solid black;
   border-radius: 10px;
   padding: 10px;
@@ -361,6 +385,15 @@ div img {
 }
 
 @media screen and (min-width: 1000px) {
+  #grid_container #drooling_rick {
+    display: block;
+    position: absolute;
+    left: 80vw;
+    top: 30vh;
+  }
+  #grid_container #drooling_rick img {
+    width: 30vh;
+  }
   #grid_container > #background {
     position: absolute;
     display: block;
