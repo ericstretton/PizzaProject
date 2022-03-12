@@ -191,7 +191,7 @@ div img {
   -ms-grid-rows: 0.25fr 5fr;
       grid-template-rows: 0.25fr 5fr;
   background-color: #3a4767;
-  height: 100vh;
+  height: 125vh;
   width: 100%;
   text-align: center;
   justify-items: center;
@@ -200,10 +200,11 @@ div img {
 section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr 0.5fr)[5];
-      grid-template-rows: repeat(5, 1fr 0.5fr);
+  -ms-grid-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
+      grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
   row-gap: 10px;
   width: 95%;
+  height: 100%;
 }
 
 .img_row {
@@ -213,6 +214,11 @@ section {
       grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 10px;
           column-gap: 10px;
+}
+
+.img_row #sauce_rick {
+  display: none;
+  z-index: -5;
 }
 
 .img_row div {
@@ -229,12 +235,30 @@ section {
 
 @media screen and (min-width: 725px) {
   .image_content {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: (1fr min-height 100vh)[2];
+        grid-template-rows: repeat(2, 1fr min-height 100vh);
     -webkit-column-gap: 10px;
             column-gap: 10px;
+    height: 150vh;
+  }
+  .image_content #fire_pizza_oven {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
   }
   .image_content .img_row {
+    row-gap: 80px;
+    display: block;
+    float: inline-start;
+  }
+  .image_content .img_row #sauce_rick {
+    width: 35vw;
     display: block;
   }
 }

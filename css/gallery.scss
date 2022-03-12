@@ -13,7 +13,7 @@
     top: 8vh;
     grid-template-rows: 0.25fr 5fr;
     background-color: $page_background;
-    height: 100vh;
+    height: 125vh;
     width: 100%;
     text-align: center;
     justify-items: center;
@@ -22,10 +22,10 @@
 
 section{
     display: grid;
-    grid-template-rows: repeat(5, 1fr 0.5fr);
+    grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
     row-gap: 10px;
     width: 95%;
-    
+    height: 100%;
 
 
 }
@@ -35,28 +35,47 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
-    
+    #sauce_rick{
+        display: none;
+        z-index: -5;
+    }
 div{
     background-color: $background;
         border: solid black;
         border-radius: 15px;
         padding: 8px;
         justify-items: center;
+        
         img{
             width: 100%;
         }
+        
 }
 }
 
 
 
 @media  screen and(min-width:725px){
+    
     .image_content{ 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr (min-height 100vh));
         column-gap: 10px;
+        height: 150vh;
+        #fire_pizza_oven{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
         .img_row{
+            row-gap: 80px;
             display: block;
-            
+            float: inline-start;
+            #sauce_rick{
+                width: 35vw;
+                display: block;
+            }
             
         }
 
