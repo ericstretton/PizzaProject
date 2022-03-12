@@ -1,4 +1,7 @@
 @import '_variables';
+// scss file is imported to all pages.
+// header is set to a 3 column grid which stays fixed to the top of the screen throughout all pages and media querries.
+
 header{
     display: grid; 
     grid-template-columns: 0.5fr 2fr 1fr;
@@ -12,6 +15,9 @@ header{
     z-index: 1;
     box-sizing: border-box;
     border: 2px solid black;
+    
+    // The center of the grid, split into 2 columns where the logo is to the left of the Header h2 title.
+    
     #title{
         display: grid;
         grid-template-columns: 1fr 4fr;
@@ -76,27 +82,26 @@ img{
 }
 
 @media  screen and(min-width:725px){
-    
-   .is_disabled{
+    header{
+        #phone_grid{
+            display: block;
+        
+        #phone_icon{
+            display: none;
+        }
+        }
+    }
+
+    .is_disabled{
         color: currentColor;
-       pointer-events: none;
-       text-decoration: none;
-       
-   }
-   header{
-   #phone_grid{
-       display: block;
-   
-   #phone_icon{
-       display: none;
-   }
-   }
-}
+        pointer-events: none;
+        text-decoration: none;
+    }
 }
 
 
 @media screen and(min-width:1000px){
-     header{
+    header{
         height: 10vh;
         z-index: 10;
         #title{
