@@ -27,7 +27,7 @@
     box-sizing: border-box;
     justify-items: center;
 
-    #title{position: relative;
+    #info_title{position: relative;
         height: 5vh;
         box-sizing: border-box;
         h3{
@@ -35,7 +35,7 @@
             font-family: $title_font;
             text-align: center;
             background-color: $alternate_background;
-            width: 25vw;
+            width: 35vw;
             border: solid black;
             border-radius: 10px;
             padding: 10px;
@@ -190,12 +190,17 @@
     }
      #grid_container > #info{
         top: 20vh;
-        height: 70vh;
+        height: 83vh;
         background-color: $alternate_background;
         width: 43vw;
         padding-left: 20px;
         border: 2px solid black;
         border-radius: 15px;
+        #info_title{
+            h3{
+                width: 15vw;
+            }
+        }
         .two, #content_container{
             display: grid;
             row-gap: 15px;

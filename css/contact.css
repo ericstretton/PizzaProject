@@ -209,19 +209,19 @@ div img {
   justify-items: center;
 }
 
-#info #title {
+#info #info_title {
   position: relative;
   height: 5vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-#info #title h3 {
+#info #info_title h3 {
   color: #34c9dd;
   font-family: "Customfont";
   text-align: center;
   background-color: #f0e14a;
-  width: 25vw;
+  width: 35vw;
   border: solid black;
   border-radius: 10px;
   padding: 10px;
@@ -380,12 +380,15 @@ div img {
   }
   #grid_container > #info {
     top: 20vh;
-    height: 70vh;
+    height: 83vh;
     background-color: #f0e14a;
     width: 43vw;
     padding-left: 20px;
     border: 2px solid black;
     border-radius: 15px;
+  }
+  #grid_container > #info #info_title h3 {
+    width: 15vw;
   }
   #grid_container > #info .two, #grid_container > #info #content_container {
     display: -ms-grid;
