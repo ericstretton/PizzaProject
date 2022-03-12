@@ -26,14 +26,14 @@ header {
   border: 2px solid black;
 }
 
-header #title {
+header #header_title {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 4fr;
       grid-template-columns: 1fr 4fr;
 }
 
-header #title h2 {
+header #header_title h2 {
   display: block;
   font-family: "Customfont";
   text-align: center;
@@ -46,6 +46,7 @@ header #phone_grid {
   display: grid;
   -ms-grid-columns: 0.5fr 2fr;
       grid-template-columns: 0.5fr 2fr;
+  height: 4vh;
 }
 
 header #phone_grid #phone_icon {
@@ -55,6 +56,7 @@ header #phone_grid #phone_icon {
 
 header #phone_grid a {
   font-family: "Indie Flower", cursive;
+  height: 4vh;
 }
 
 #menu {
@@ -62,7 +64,6 @@ header #phone_grid a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  display: inline-block;
 }
 
 #dropdown {
@@ -124,14 +125,14 @@ img {
     height: 10vh;
     z-index: 10;
   }
-  header #title a {
+  header #header_title a {
     left: 0;
     position: absolute;
   }
-  header #title a img {
+  header #header_title a img {
     width: 85px;
   }
-  header #title h2 {
+  header #header_title h2 {
     -ms-grid-column: 2;
     grid-column: 2;
     font-size: 36px;
@@ -228,7 +229,10 @@ section {
 section img {
   position: relative;
   left: -10vw;
+  top: 3vh;
   min-width: 40vw;
+  -webkit-box-shadow: 5px black;
+          box-shadow: 5px black;
 }
 
 section #title {

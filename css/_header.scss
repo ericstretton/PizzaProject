@@ -18,7 +18,7 @@ header{
     
     // The center of the grid, split into 2 columns where the logo is to the left of the Header h2 title.
     
-    #title{
+    #header_title{
         display: grid;
         grid-template-columns: 1fr 4fr;
             h2{display: block;
@@ -32,11 +32,13 @@ header{
         position: relative;
         display: grid;
         grid-template-columns: 0.5fr 2fr;
+        height: 4vh;
         #phone_icon{width: 25px;
         color: blue;
         }
         a{
             font-family: $content_font;
+            height: 4vh;
         }
     }
     
@@ -44,7 +46,6 @@ header{
 }
 #menu{
     user-select: none;
-    display: inline-block;
 }
 
 #dropdown{
@@ -82,6 +83,7 @@ img{
 }
 
 @media  screen and(min-width:725px){
+// disabling a tag interactivity and making the img disappear to better show that the clickable phone number is gone
     header{
         #phone_grid{
             display: block;
@@ -101,10 +103,12 @@ img{
 
 
 @media screen and(min-width:1000px){
-    header{
+// Adjust header height to contain the dropdowns being placed beneath the #title grid
+    
+header{
         height: 10vh;
         z-index: 10;
-        #title{
+        #header_title{
             a{
                 left: 0;
                 position: absolute;
