@@ -267,4 +267,14 @@ h3 {
     display: block;
   }
 }
+
+@media screen and (min-width: 1000px) {
+  #grid_container {
+    height: 250vh;
+  }
+  #content_title {
+    position: relative;
+    top: 3vh;
+  }
+}
 /*# sourceMappingURL=gallery.css.map */
