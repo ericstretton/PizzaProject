@@ -282,6 +282,10 @@ input[type=radio]:hover {
   color: #f0e14a;
 }
 
+#menu_categories ul .sub .pizza_menu_items #content_shell p, #menu_categories ul .sub .pasta_menu_items #content_shell p, #menu_categories ul .sub .dessert_menu_items #content_shell p {
+  color: black;
+}
+
 .sub {
   position: absolute;
   -webkit-box-pack: center;
@@ -431,9 +435,6 @@ input[type=radio]:hover {
   }
   .pasta_content .dessert_menu_items #content_shell, .pasta_content .pasta_menu_items #content_shell, .pasta_content .pizza_menu_items #content_shell, .dessert_content .dessert_menu_items #content_shell, .dessert_content .pasta_menu_items #content_shell, .dessert_content .pizza_menu_items #content_shell, .pizza_content .dessert_menu_items #content_shell, .pizza_content .pasta_menu_items #content_shell, .pizza_content .pizza_menu_items #content_shell {
     width: 15vw;
-  }
-  .pasta_content .dessert_menu_items #content_shell p, .pasta_content .pasta_menu_items #content_shell p, .pasta_content .pizza_menu_items #content_shell p, .dessert_content .dessert_menu_items #content_shell p, .dessert_content .pasta_menu_items #content_shell p, .dessert_content .pizza_menu_items #content_shell p, .pizza_content .dessert_menu_items #content_shell p, .pizza_content .pasta_menu_items #content_shell p, .pizza_content .pizza_menu_items #content_shell p {
-    color: black;
   }
 }
 /*# sourceMappingURL=Menu.css.map */

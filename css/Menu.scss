@@ -100,6 +100,9 @@ input[type=radio]:hover{
             #content_shell{
                 font-family: $content_font;
                 color: $font_color;
+                p{
+                    color: black;
+                }
             }
           }
       }  
@@ -233,9 +236,7 @@ input[type=radio]:hover{
             width: 15vw;
             #content_shell{
                 width: 15vw;
-                p{
-                    color: black;
-                }
+                
             }
         }
         
