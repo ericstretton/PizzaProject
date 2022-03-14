@@ -1,3 +1,4 @@
+// Custom Font
 @font-face {
     font-family: Customfont;
     src: url(/fonts/get_schwifty.ttf);
@@ -5,10 +6,11 @@
 $title_font:"Customfont";
 $content_font:'Shadows Into Light', cursive;
 
+// font colors
 $title_font_color: #34c9dd;
 $font_color:#f0e14a;
 
-
+// background theme colors
 $background: #e89ac7;
 $page_background: #3a4767;
 $alternate_background: #f0e14a;

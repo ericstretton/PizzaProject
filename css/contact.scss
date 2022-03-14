@@ -173,6 +173,7 @@
 
 @media screen and(min-width:1000px)
 {
+    // make img appear on the right side of the page
     #grid_container{
         #drooling_rick{
             display: block;
@@ -184,6 +185,8 @@
             }
         }
     }
+
+    // set background to be google maps location 
     #grid_container > #background{
         position: absolute;
        display: block;
@@ -231,7 +234,7 @@
             width: 40vw;
         }
        
-
+// make the original google maps item disappear
     }
      #grid_container > #info > .mapouter{
         display: none;
