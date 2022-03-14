@@ -28,7 +28,7 @@ section{
         left: -10vw;
         top: 3vh;
         min-width: 40vw;
-        box-shadow: 5px black;
+        
         
     }
     #title{
@@ -49,6 +49,7 @@ section{
     }
 }
 
+// Use of radio function to make the menu item categories only be selectable one at a time. The actual input is hidden and overtop of each specific category name, pizza, pasta, dessert.
 input[type=radio]{
     background-color: white;
     cursor: pointer;
@@ -58,6 +59,7 @@ input[type=radio]{
     height: 25px;
     
 }
+// The contents of .sub are hidden until the user clicks one of the category names
 div.sub{
     display: none;
 }

@@ -55,7 +55,7 @@ header #phone_grid #phone_icon {
 }
 
 header #phone_grid a {
-  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
   height: 4vh;
 }
 
@@ -64,6 +64,11 @@ header #phone_grid a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+#menu:focus-within #dropdown {
+  display: block;
+  pointer-events: all;
 }
 
 #dropdown {
@@ -78,7 +83,7 @@ header #phone_grid a {
   width: 99vw;
   left: 0;
   top: 5vh;
-  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
   color: black;
 }
 
@@ -95,11 +100,6 @@ header #phone_grid a {
 
 #menu:focus-within {
   pointer-events: none;
-}
-
-#menu:focus-within #dropdown {
-  display: block;
-  pointer-events: all;
 }
 
 img {
@@ -159,7 +159,7 @@ img {
   }
   #dropdown ul li a {
     text-decoration: none;
-    font-family: "Indie Flower", cursive;
+    font-family: "Shadows Into Light", cursive;
     color: #f0e14a;
   }
 }
@@ -259,7 +259,7 @@ section div p {
   padding: 10px;
   color: #f0e14a;
   background-color: #e89ac7;
-  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
   width: 92vw;
 }
 

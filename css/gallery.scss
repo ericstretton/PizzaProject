@@ -19,7 +19,8 @@
     justify-items: center;
     
 }
-
+// organized to have content_title centered at the top of the page, with the remainder of the space to be fille with the images in a grid system.
+// Grid layout is staggered to fit the sizing of height oriented images along with the width oriented images.
 section{
     display: grid;
     grid-template-rows: 1fr 0.5fr 1fr 0.5fr 1fr;
@@ -34,6 +35,8 @@ h3{
     font-family: $title_font;
     color: $title_font_color;
 }
+// Created a sub grid for the image to have columns within their respective rows. 
+// The sauce rick is hidden for the mobile media query.
 .img_row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -61,10 +64,12 @@ div{
 @media  screen and(min-width:725px){
     
     .image_content{ 
+        // Expanded content height for the larger image sizes, created a grid series of columns and rows
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(2, 1fr (min-height 100vh));
         column-gap: 10px;
         height: 150vh;
+        // Placed last div (fire_pizza_oven) to a sub grid and placed the items into specific coordinates of parent grid to complete the box of images around the newly visible sauce_rick img
         #fire_pizza_oven{
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -74,7 +79,6 @@ div{
         .img_row{
             row-gap: 80px;
             display: block;
-            float: inline-start;
             #sauce_rick{
                 width: 35vw;
                 display: block;
@@ -86,6 +90,7 @@ div{
 }
 
 @media screen and(min-width:1000px){
+    // Expanded Page length to fit content for media query change, pushed content_title down to avoid the headers increased height.
     #grid_container{
         height: 250vh;
     }

@@ -47,6 +47,11 @@ header{
 #menu{
     user-select: none;
 }
+//When the hamburger icon is the last item interacted with, the menu #dropdown becomes visible, allowing you to select menu, contact us, and gallery.
+#menu:focus-within #dropdown{
+    display: block;
+    pointer-events: all;
+}
 
 #dropdown{
     display: none;
@@ -72,10 +77,8 @@ header{
 #menu:focus-within{
     pointer-events: none;
 }
-#menu:focus-within #dropdown{
-    display: block;
-    pointer-events: all;
-}
+
+
 
 
 img{

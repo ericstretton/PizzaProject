@@ -55,7 +55,7 @@ header #phone_grid #phone_icon {
 }
 
 header #phone_grid a {
-  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
   height: 4vh;
 }
 
@@ -64,6 +64,11 @@ header #phone_grid a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+#menu:focus-within #dropdown {
+  display: block;
+  pointer-events: all;
 }
 
 #dropdown {
@@ -78,7 +83,7 @@ header #phone_grid a {
   width: 99vw;
   left: 0;
   top: 5vh;
-  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
   color: black;
 }
 
@@ -95,11 +100,6 @@ header #phone_grid a {
 
 #menu:focus-within {
   pointer-events: none;
-}
-
-#menu:focus-within #dropdown {
-  display: block;
-  pointer-events: all;
 }
 
 img {
@@ -159,7 +159,7 @@ img {
   }
   #dropdown ul li a {
     text-decoration: none;
-    font-family: "Indie Flower", cursive;
+    font-family: "Shadows Into Light", cursive;
     color: #f0e14a;
   }
 }
@@ -231,8 +231,6 @@ section img {
   left: -10vw;
   top: 3vh;
   min-width: 40vw;
-  -webkit-box-shadow: 5px black;
-          box-shadow: 5px black;
 }
 
 section #title {
@@ -304,7 +302,7 @@ input[type=radio]:hover {
 }
 
 #menu_categories ul .sub .pizza_menu_items #content_shell, #menu_categories ul .sub .pasta_menu_items #content_shell, #menu_categories ul .sub .dessert_menu_items #content_shell {
-  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
   color: #f0e14a;
 }
 
@@ -339,7 +337,7 @@ input[type=radio]:hover {
   border-radius: 20px;
   padding: 10px;
   width: 40vw;
-  font-family: "Indie Flower", cursive;
+  font-family: "Shadows Into Light", cursive;
 }
 
 .sub .dessert_menu_items {
